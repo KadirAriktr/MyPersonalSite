@@ -12,10 +12,7 @@ namespace MyPersonalSite.Controllers
     {
         ExperienceManager _experienceManager = new ExperienceManager(new EfExperience());
 
-        public Experience2Controller(ExperienceManager experienceManager)
-        {
-            _experienceManager = experienceManager;
-        }
+  
 
         public IActionResult Index()
         {

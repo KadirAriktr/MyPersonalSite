@@ -14,10 +14,7 @@ namespace MyPersonalSite.Controllers
     {
         TestimonialManager _testimonialManager = new TestimonialManager(new EfTestimonial());
 
-        public TestimonialsController(TestimonialManager testimonialManager)
-        {
-            _testimonialManager = testimonialManager;
-        }
+     
 
         public IActionResult Index()
         {

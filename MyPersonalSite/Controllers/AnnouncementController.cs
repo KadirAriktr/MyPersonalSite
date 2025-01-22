@@ -12,10 +12,7 @@ namespace MyPersonalSite.Controllers
     {
         AnnouncementManager _announcementManager = new AnnouncementManager(new EfAnnouncement());
 
-        public AnnouncementController(AnnouncementManager announcementManager)
-        {
-            _announcementManager = announcementManager;
-        }
+       
 
         [HttpGet]
         public IActionResult Index()

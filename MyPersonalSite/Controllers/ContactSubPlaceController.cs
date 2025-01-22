@@ -11,10 +11,7 @@ namespace MyPersonalSite.Controllers
     {
         ContactManager _contactManager = new ContactManager(new EfContact());
 
-        public ContactSubPlaceController(ContactManager contactManager)
-        {
-            _contactManager = contactManager;
-        }
+    
 
         [HttpGet]
         public IActionResult Index()

@@ -11,11 +11,7 @@ namespace MyPersonalSite.Controllers
     {
         SocialMediaManager _socialMediaManager = new SocialMediaManager(new EfSocialMedia());
 
-        public SocialMediaController(SocialMediaManager socialMediaManager)
-        {
-            _socialMediaManager = socialMediaManager;
-        }
-
+      
         public IActionResult Index()
         {
             var values=_socialMediaManager.TGetList();

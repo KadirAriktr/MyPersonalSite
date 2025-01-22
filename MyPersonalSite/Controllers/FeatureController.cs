@@ -11,10 +11,7 @@ namespace MyPersonalSite.Controllers
     {
         FeatureManager _featureManager = new FeatureManager(new EfFeature());
 
-        public FeatureController(FeatureManager featureManager)
-        {
-            _featureManager = featureManager;
-        }
+     
 
         [HttpGet]
         public IActionResult Index()

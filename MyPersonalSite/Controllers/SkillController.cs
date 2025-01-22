@@ -11,11 +11,7 @@ namespace MyPersonalSite.Controllers
     {
         SkillManager _skillManager = new SkillManager(new EfSkill());
 
-        public SkillController(SkillManager skillManager)
-        {
-            _skillManager = skillManager;
-        }
-
+      
         public IActionResult Index()
         {
             var values = _skillManager.TGetList();

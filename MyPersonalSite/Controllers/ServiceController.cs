@@ -14,10 +14,7 @@ namespace MyPersonalSite.Controllers
     {
         ServiceManager _serviceManager=new ServiceManager(new EfService());
 
-        public ServiceController(ServiceManager serviceManager)
-        {
-            _serviceManager = serviceManager;
-        }
+     
 
         public IActionResult Index()
         {

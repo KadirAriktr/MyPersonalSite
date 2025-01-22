@@ -13,10 +13,7 @@ namespace MyPersonalSite.Controllers
     {
         PortfolioManager _portfolioManager = new PortfolioManager(new EfPortfolio());
 
-        public PortfolioController(PortfolioManager portfolioManager)
-        {
-            _portfolioManager = portfolioManager;
-        }
+     
 
         public IActionResult Index()
         {

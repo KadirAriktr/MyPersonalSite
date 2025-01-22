@@ -12,10 +12,7 @@ namespace MyPersonalSite.Controllers
     {
         WriterMessageManager _writerMessageManager = new WriterMessageManager(new EfWriterMessage());
 
-        public AdminMessageController(WriterMessageManager writerMessageManager)
-        {
-            _writerMessageManager = writerMessageManager;
-        }
+     
 
         public IActionResult ReceiverMessageList()
         {

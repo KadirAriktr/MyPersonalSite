@@ -11,11 +11,7 @@ namespace MyPersonalSite.Controllers
     {
         AboutManager _aboutManager = new AboutManager(new EfAbout());
 
-        public AboutController(AboutManager aboutManager)
-        {
-            _aboutManager = aboutManager;
-        }
-
+      
         [HttpGet]
         public IActionResult Index()
         {

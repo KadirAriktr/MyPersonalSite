@@ -10,10 +10,7 @@ namespace MyPersonalSite.Controllers
     {
         MessageManager _messageManager = new MessageManager(new EfMessage());
 
-        public ContactController(MessageManager messageManager)
-        {
-            _messageManager = messageManager;
-        }
+   
 
         public IActionResult Index()
         {
