@@ -1,11 +1,10 @@
-﻿
+﻿@model EntityLayer.Concrete.About
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 
-@model EntityLayer.Concrete.About
 
 @using (Html.BeginForm("Index", "About", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
