@@ -1,0 +1,46 @@
+﻿@model EntityLayer.Concrete.Testimonial
+@{
+    ViewData["Title"] = "AddTestimonials";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <p class="card-description">Referans Ekleme Paneli</p>
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label for="ClientName">Ad Soyad</label>
+                    @Html.TextBoxFor(x => x.ClientName, new { @class = "form-control", id = "ClientName" })
+                    @Html.ValidationMessageFor(x => x.ClientName)
+                </div>
+                <div class="form-group">
+                    <label for="Company">Şirket</label>
+                    @Html.TextBoxFor(x => x.Company, new { @class = "form-control", id = "Company" })
+                    @Html.ValidationMessageFor(x => x.Company)
+                </div>
+                <div class="form-group">
+                    <label for="Title">Unvan</label>
+                    @Html.TextBoxFor(x => x.Title, new { @class = "form-control", id = "Title" })
+                    @Html.ValidationMessageFor(x => x.Title)
+                </div>
+                <div class="form-group">
+                    <label for="ImageUrl">Görsel Yolu</label>
+                    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control", id = "ImageUrl" })
+                    @Html.ValidationMessageFor(x => x.ImageUrl)
+                </div>
+                <div class="form-group">
+                    <label for="Comment">Yorum</label>
+                    @Html.TextAreaFor(x => x.Comment, 10, 3, new { @class = "form-control", id = "Comment" })
+                    @Html.ValidationMessageFor(x => x.Comment)
+                </div>
+
+                <button type="submit" class="btn btn-primary me-2">Kaydet</button>
+                <button class="btn btn-dark" asp-action="Index">İptal</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

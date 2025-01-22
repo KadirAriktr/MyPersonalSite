@@ -1,0 +1,51 @@
+﻿@model EntityLayer.Concrete.Announcement
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("Index", "Announcement", FormMethod.Post))
+{
+
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+
+                <p class="card-description"> Yeni Duyuru Ekleme Paneli</p>
+                <div>
+                    <div class="form-group">
+                        <label>Başlık</label>
+                        <input type="text" class="form-control" name="Title">
+                        <span> @Html.ValidationMessageFor(x => x.Title)</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Tarih</label>
+                        <input type="text" class="form-control" name="Date">
+                        <span> @Html.ValidationMessageFor(x => x.Date)</span>
+                    </div>
+                    <div class="form-group">
+                        <label>Durum</label>
+                        <input type="text" class="form-control" name="Status">
+                        <span> @Html.ValidationMessageFor(x => x.Status)</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleTextarea1">Açıklama</label>
+                        <textarea class="form-control" name="Content" rows="6"></textarea>
+                        <span> @Html.ValidationMessageFor(x => x.Content)</span>
+                    </div>
+                    <button type="submit" class="btn btn-primary me-2">Kaydet</button>
+                    <button type="button" class="btn btn-dark" onclick="window.history.back();">İptal</button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+
+

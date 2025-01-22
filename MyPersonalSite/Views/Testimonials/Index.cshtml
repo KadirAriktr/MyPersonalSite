@@ -1,0 +1,56 @@
+﻿@using EntityLayer.Concrete
+@model List<Testimonial>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<div class="row ">
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Referans Listesi</h4>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                
+                                <th>#</th>
+                                <th>Ad Soyad</th>
+                                <th>Şirket</th>
+                                <th>Unvan</th>
+                                <th>Sil</th>
+                                <th>Düzenle</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach(var items in Model)
+                            {
+                                <tr>
+
+                                    <td>
+                                        <img src="@items.ImageUrl" alt="image" />
+                                        
+                                    </td>
+                                    <td> @items.ClientName </td>
+                                    <td> @items.Company </td>
+                                    <td> @items.Title </td>
+                                    <td> <a href="/Testimonials/DeleteTestimonials/@items.TestimonialId" class="btn btn-outline-warning">Sil</a> </td>
+                                    <td> <a href="/Testimonials/EditTestimonials/@items.TestimonialId" class="btn btn-outline-success">Detaylar</a> </td>
+                                    
+                                </tr>
+                            }
+                            
+                            
+                        </tbody>
+                    </table>
+                    <br />
+                    <center><a asp-action="AddTestimonials" class="btn btn-outline-primary">Referans Ekle</a> </center>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

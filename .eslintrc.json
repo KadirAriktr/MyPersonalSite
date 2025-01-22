@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "no-warning-comments": "off",
+    "no-unused-vars": "off",
+    "deprecation": "off"
+  }
+}
