@@ -52,7 +52,7 @@ Her bir panel farklı erişim yetkilerine sahip kullanıcılar için özelleşti
 ![Adminİletişim](https://github.com/user-attachments/assets/cdd86430-b400-4ced-b4a2-39bea2ba5231)
 ![AdminProjeEkleme](https://github.com/user-attachments/assets/418f3e8c-2c71-46bd-954b-f854eb6ac9ee)
 ![AdminSosyalMedya](https://github.com/user-attachments/assets/1b791b42-0bcf-4a5e-87e5-7978bc1a3db9)
-
+![AdminIstatistik](https://github.com/user-attachments/assets/c5c36775-1769-4456-a76c-9cf7116dce0d)
 
 
 
